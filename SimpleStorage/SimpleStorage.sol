@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.24;
 
-// okay, i think its just looking for the cotnract folder
 contract SimpleStorage {
 
     uint256 public myFavouriteNumber;
@@ -12,7 +11,6 @@ contract SimpleStorage {
         uint256 favouriteNumber;
         string name;
     }
-    // okay post on linkedin. 
     // Person[3] -> static array 
     // dynamic array
     Person[] public listOfPeople;
@@ -21,8 +19,7 @@ contract SimpleStorage {
         favouriteNumber: 7, 
         name: "Pat"
     });
-    // okay wait. let me connect
-    // "jw" -> 99
+
     mapping(string => uint256) public nameToFavouriteNumber;
 
     function store(uint256 _favouriteNumber) public virtual {
@@ -45,8 +42,3 @@ contract SimpleStorage {
 // 2. calldata (temp, cannot be modified)
 //    memory (temp,  can still be modified) - eg. addPerson(string memory name) -> this is an array of bytes so it needs memmory
 //    storage (perm, can be modified)
-
-// video lagging
-// Qn: ehhh we can also set as calldata right? Since it also works. Yeah
-// but in this case...
-// so stupid. 
